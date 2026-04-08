@@ -59,13 +59,6 @@ function updateCounters() {
 
     completedCounter.textContent = completedTasks;
     uncompletedCounter.textContent = uncompletedTasks;
-
-    deleteBtn.addEventListener("click", function () {
-        if (confirm("Are you sure you want to delete this task?")) {
-            li.remove();
-            updateCounters();
-        }
-    });
 }
 
 

@@ -1,4 +1,4 @@
-/* Colors: #81A6C6 (Dark Blue) #AACDDC (Light Blue) #F3E3D0 (Light Brown) #D2C4B4 (Dark Beige)  */
+/* Colors: #81A6C6 (Dark Blue) #2a4c68 (dark dark blue)  #AACDDC (Light Blue) #F3E3D0 (Light Brown) #D2C4B4 (Dark Beige)  #616875 (gray)*/
 /* Shape buttons like life buoys, ship wheels, or anchor symbols. */
 /* Include small animated elements like a seagull flying across the screen or a ship sailing when an item is completed. */
 /* Design the frame to resemble a ship's porthole, giving a view of the ocean. */
@@ -7,51 +7,33 @@
 /*  */
 /*  */
 
+/* Font */
+body {
+    font-family: 'Pirata One', system-ui;
+}
 
 /* Completed task style */
 .completed span {
     text-decoration: line-through;
-    color: gray;
+    color: #616875;
 }
 
 .completed {
     opacity: 0.6;
 }
 
+
 /* background  */
 body {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.028124999999999956) 0%, rgba(253,187,45,1) 100%);
-    font-family: Arial, sans-serif;
+    background: #F5F5F5;
+    background: radial-gradient(circle,rgba(245, 245, 245, 1) 0%, rgba(186, 218, 227, 1) 100%);
     text-align: center;
     margin-top: 50px;
 }
 
 /* Different background color for the to-do container */
 #todo-container {
-    background: rgb(41, 33, 33);
-    width: 400px;
-    margin: 0 auto;
-    border: 2px solid #0033ff;
-    padding: 20px;
-    color: white;
-    border-radius: 15px;
-}
-
-/* Styling for header, input box and input button  */
-#todo-container {
-    background: rgb(41, 33, 33);
-    width: 400px;
-    margin: 0 auto;
-    border: 2px solid #0033ff;
-    padding: 20px;
-    color: white;
-    border-radius: 15px;
-}
-
-/* background a different color from the body and adding a border around the container: */
-#todo-container {
-    background: rgb(41, 33, 33);
+    background: #D2C4B4;
     width: 400px;
     margin: 0 auto;
     border: 2px solid #0033ff;
@@ -84,16 +66,18 @@ h1 {
 
 #input-button {
     font-size: 20px;
+    color: #f5f5f5;
     cursor: pointer;
     transition: 0.4s;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #2e60ea;
+    background-color: #2a4c68;
 }
 
 #input-button:hover {
-    background-color: #9eb7fd;
+    background-color: #AACDDC;
+    color: #2a4c68;
 }
 
 /* Remove the bullet styling from the unordered list. */
